@@ -1,6 +1,10 @@
 :root {
         /* Put variables here */
-        
+        --main-color: #9a8c98;
+        --accent-1: 22223b;
+        --accent-2: #f2e9e4;
+        --accent-3: #4a4e69;
+        --accent-4: #c9ada7;
       }
       *{
         margin: 0;
@@ -9,14 +13,14 @@
         font-family: 'Open Sans Condensed', sans-serif;
       }
       body {
-        background: lightgray;
+        background: var(--main-color);
       }
       header {
         padding: 2rem;
         text-align: center;
       }
       nav {
-        background: black;
+        background: var(--accent-1);
         color: white;
       }
       nav ul {
@@ -44,13 +48,13 @@
       
       
       footer {
-        background: black;
+        background: var(--accent-1);
         color: white;
         padding: 3rem;
         min-height: 10vh;
       }
       .container {
-        background: burlywood;
+        background: var(--accent-2);
         padding: 1rem;
         min-height: 60vh;
         width: 80%;
@@ -198,6 +202,18 @@
         }
         .section-item {
           flex-basis: 92%;
+        }
+        .row {
+          flex-direction: column;
+        }
+        .section-header {
+          text-align: center;
+        }
+        .row-button {
+          max-width: 60vw;
+        }
+        .contact {
+          align-items: center;
         }
       }
       
